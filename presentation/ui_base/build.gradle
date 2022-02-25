@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk Versions.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdkVersion
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = Versions.kotlinCompilerExtensionVersion
+    }
+}
+
+dependencies {
+    api Dependencies.androidAccompanistSystemuiController
+    api Dependencies.androidMaterial
+    api Dependencies.androidxActivityCompose
+    api Dependencies.androidxAppcompat
+    api Dependencies.androidxComposeNavigation
+    api Dependencies.androidxComposeUi
+    api Dependencies.androidxComposeUiFoundation
+    api Dependencies.androidxComposeUiMaterial
+    api Dependencies.androidxComposeUiMaterialIcons
+    api Dependencies.androidxComposeUiMaterialIconsExtended
+    api Dependencies.androidxComposeUiTooling
+    api Dependencies.androidxComposeRuntimeLivedata
+    api Dependencies.androidxCoreKtx
+    api Dependencies.androidxLifecycleViewModelCompose
+    api Dependencies.ioCoilCompose
+    api Dependencies.koinAndroid
+    api Dependencies.koinAndroidCompose
+    api Dependencies.kotlinCoroutinesCore
+}

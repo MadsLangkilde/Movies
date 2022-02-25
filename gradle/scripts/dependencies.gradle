@@ -1,0 +1,37 @@
+ext {
+    dependencies {
+        implementation fileTree(include: '*.jar', dir: 'libs')
+
+        // Presentation modules
+        implementation project(":presentation:ui_base")
+        implementation project(":presentation:feature_home")
+        implementation project(":presentation:feature_lists")
+        implementation project(":presentation:feature_moviesbrowser")
+
+        // Domain modules
+        implementation project(":domain:domain_general")
+        implementation project(":domain:domain_omdb")
+
+        // Repository modules
+        implementation project(":repositories:repository_omdb")
+
+        // Libraries
+        api Dependencies.androidAccompanistSystemuiController
+        api Dependencies.androidxActivityCompose
+        api Dependencies.androidxAppcompat
+        api Dependencies.androidxComposeNavigation
+        api Dependencies.androidxComposeUi
+        api Dependencies.androidxComposeUiFoundation
+        api Dependencies.androidxComposeUiMaterial
+        api Dependencies.androidxComposeUiMaterialIcons
+        api Dependencies.androidxComposeUiMaterialIconsExtended
+        api Dependencies.androidxComposeUiTooling
+        api Dependencies.androidxComposeRuntimeLivedata
+        api Dependencies.androidxCoreKtx
+        api Dependencies.androidxLifecycleViewModelCompose
+        api Dependencies.koinAndroid
+        api Dependencies.koinAndroidCompose
+        api Dependencies.kotlin
+        api Dependencies.kotlinCoroutinesCore
+    }
+}

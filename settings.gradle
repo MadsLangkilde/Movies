@@ -1,2 +1,16 @@
-rootProject.name = "Movies App"
 include ':app'
+
+// Presentation modules
+include ':presentation:feature_home'
+include ':presentation:feature_lists'
+include ':presentation:feature_moviesbrowser'
+include ':presentation:ui_base'
+
+// Domain modules
+include ':domain:domain_general'
+include ':domain:domain_omdb'
+
+// Repository modules
+include ':repositories:repository_omdb'
+include ':repositories:repository_base'
+include ':domain:domain_general'

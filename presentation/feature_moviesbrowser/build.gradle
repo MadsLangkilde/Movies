@@ -1,0 +1,5 @@
+apply from: "$rootDir/gradle/templates/common-android-presentation.gradle"
+
+dependencies {
+    implementation project(':domain:domain_omdb')
+}
